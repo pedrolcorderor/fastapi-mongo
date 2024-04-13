@@ -7,7 +7,7 @@ from db.schemas.user import user_schema, users_schema
 from db.client import db_client
 from bson import ObjectId
 
-router = APIRouter(prefix="/userdb",
+router = APIRouter(prefix="/userdb/v1",
                    tags=["userdb"],
                    responses={status.HTTP_404_NOT_FOUND: {"message": "No encontrado"}})
 

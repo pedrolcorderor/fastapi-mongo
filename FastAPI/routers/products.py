@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-router=APIRouter(prefix="/products",
+router=APIRouter(prefix="/products/v1",
                  tags=["producst"],
                  responses={404:{"message": "No encontrado"}}
                  )
